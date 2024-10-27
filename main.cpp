@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
 
     // char fileName[100]; also works and * is not required because arrays in C++ decay into pointers when passed to functions.
 
-    char *fileName = argv[1];                                                       // Assuming file name length won't exceed 100 characters
+    char *fileName = argv[1];                                                       // Receive filename from the command line
     char *data = nullptr;                                                           // data array
     size_t numOfBytes = 0;                                                          // stored the total number of bytes in the test file
     const size_t slots = 256;                                                       // largest byte value
